@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cyberpunk Dark Theme - Base Colors */
+    --background: 220 15% 8%;
+    --foreground: 180 100% 95%;
+
+    --card: 220 15% 10%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 220 15% 8%;
+    --popover-foreground: 180 100% 95%;
+
+    /* Cyber Neon Primary - Electric Blue */
+    --primary: 191 100% 50%;
+    --primary-foreground: 220 15% 8%;
+
+    /* Cyber Neon Secondary - Matrix Green */
+    --secondary: 120 100% 40%;
+    --secondary-foreground: 220 15% 8%;
+
+    /* Muted Dark Surfaces */
+    --muted: 220 15% 12%;
+    --muted-foreground: 180 20% 70%;
+
+    /* Cyber Accent - Electric Purple */
+    --accent: 270 100% 60%;
+    --accent-foreground: 220 15% 8%;
+
+    /* Cyber Danger - Neon Red */
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 220 15% 8%;
+
+    /* Borders and Inputs */
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 191 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Cyber Warning - Orange */
+    --warning: 35 100% 55%;
+    --warning-foreground: 220 15% 8%;
+
+    /* Cyber Success - Bright Green */
+    --success: 120 100% 50%;
+    --success-foreground: 220 15% 8%;
+
+    /* Cyber Info - Cyan */
+    --info: 180 100% 50%;
+    --info-foreground: 220 15% 8%;
+
+    /* Gradients */
+    --gradient-cyber-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-cyber-danger: linear-gradient(135deg, hsl(var(--destructive)), hsl(35 100% 55%));
+    --gradient-cyber-success: linear-gradient(135deg, hsl(var(--success)), hsl(var(--primary)));
+    --gradient-matrix: linear-gradient(135deg, hsl(120 100% 40%), hsl(120 100% 60%));
+
+    /* Shadows and Effects */
+    --glow-primary: 0 0 20px hsl(var(--primary) / 0.5);
+    --glow-danger: 0 0 20px hsl(var(--destructive) / 0.5);
+    --glow-success: 0 0 20px hsl(var(--success) / 0.5);
+    --glow-accent: 0 0 20px hsl(var(--accent) / 0.5);
+
+    /* Transitions */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar Colors */
+    --sidebar-background: 220 15% 6%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 191 100% 50%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 191 100% 50%;
+  }
+
+  .dark {
+    /* Dark mode uses the same cyberpunk theme */
+    --background: 220 15% 8%;
+    --foreground: 180 100% 95%;
+    --card: 220 15% 10%;
+    --card-foreground: 180 100% 95%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 180 100% 95%;
+    --primary: 191 100% 50%;
+    --primary-foreground: 220 15% 8%;
+    --secondary: 120 100% 40%;
+    --secondary-foreground: 220 15% 8%;
+    --muted: 220 15% 12%;
+    --muted-foreground: 180 20% 70%;
+    --accent: 270 100% 60%;
+    --accent-foreground: 220 15% 8%;
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 220 15% 8%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 191 100% 50%;
+    --sidebar-background: 220 15% 6%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 191 100% 50%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 191 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
