@@ -6,7 +6,7 @@ A sophisticated, production-ready cyber threat intelligence visualization platfo
 
 ## 🌐 Live Demo
 
-**URL**: https://lovable.dev/projects/2646ddb4-94f1-4351-8019-c6e050b6b9e6
+**URL**: https://cyber-nexus-globe.loveable.app/
 
 ## 🚀 Features
 
